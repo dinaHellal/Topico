@@ -1,7 +1,9 @@
 let cart = document.getElementById("cart");
-function openCart(){
+function openCart() {
   cart.classList.add("active");
 }
-function closeCart(){
+function closeCart() {
   cart.classList.remove("active");
 }
+
+
