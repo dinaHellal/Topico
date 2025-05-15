@@ -18,11 +18,11 @@
   <button type="submit">Search</button>
 </form>
     <div class="cart-header d-flex">
-      <div class="icon-cart">
+      <div onclick="openCart()" class="icon-cart">
         <i class="fa-solid fa-shop"></i>
         <span class="count-items">0</span>
       </div>
-      <div class="total-price d-flex">
+      <div class="total-price ">
         <p>my cart</p>
         <p class="price-cart-head">$0</p>
       </div>
@@ -44,5 +44,45 @@
   </div>
 </nav>
   </header>
+  <div class="cart d-flex " id="cart">
+    <div class="top-cart d-flex">
+      <h3>My cart <span>(0 item in cart)</span></h3>
+      <span onclick="closeCart()" class="close-cart"><i class="fa-regular fa-circle-xmark"></i></span>
+    </div>
+    <div class="items-in-cart">
+<div class="item-cart">
+  <img src="assets/img/product/product-1.jpg" alt="product">
+  <div class="content">
+    <h4>Lorem ipsum dolor sit amet.</h4>
+    <p class="price-cart">$140</p>
+  </div>
+  <button class="delete"><i class="fa-solid fa-trash"></i></button>
+</div> 
+<div class="item-cart">
+  <img src="assets/img/product/product-2.jpg" alt="product">
+  <div class="content ">
+    <h4>Lorem ipsum dolor sit amet.</h4>
+    <p class="price-cart">$140</p>
+  </div>
+  <button class="delete"><i class="fa-solid fa-trash"></i></button>
+</div> 
+  </div>
+    <div class="bottom-cart ">
+      <div class="tottal d-flex">
+        <p>Cart subtotal</p>
+        <p class="price-cart-total">$0</p>
+      </div>
+      <div class="button-cart d-flex">
+        <a href="" class="btn-cart">Proceed to checkout</a>
+        <button class="btn-cart trans-bg">Shop more</button>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="assets/scripts/main.js"></script>
 </body>
 </html>
