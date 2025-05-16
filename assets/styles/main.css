@@ -376,3 +376,35 @@ border-radius: 30px !important;
 .featuers .container .featuer-items p{
   font-size: 12px;
 }
+.banner {
+  margin: 50px 0;
+}
+.banner .container{
+  justify-content: space-between;
+  gap: 0px;
+}
+.banner .container .banner-img {
+  width: 32%;
+  position: relative;
+}
+.banner .container .banner-img img{
+  width: 100%;
+}
+.banner  .glass-hover{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+.banner  .glass-hover::after{
+  content: " ";
+  position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(50deg , transparent 50% , rgba(255, 255 ,255 ,0.5) 60%,
+rgba(255, 255, 255, 0.5) 70%, transparent 71%);
+}
