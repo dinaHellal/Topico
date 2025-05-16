@@ -334,9 +334,45 @@ color: var(--main-color);
   width: calc(100% - 100px);
   overflow: hidden;
   margin-top: 20px;
+  position: relative;
 }
 .slider .container .slide-swipe img{
   width: 100%;
   height: 100%;
   object-position: left top;
+}
+.slider .container .slide-swipe .swiper-pagination span{
+  background-color: var(--bg);
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: var(--main-color) !important;
+  width: 35px !important;
+  height: 8px !important;
+border-radius: 30px !important;
+}
+.featuers{
+  margin: 50px 0;
+} 
+.featuers .container{
+  background-color: var(--bg);
+  padding: 15px 15px;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+.featuers .container .featuer-items{
+  width: 18%;
+  min-width: 200px;
+  align-items: center;
+
+}
+.featuers .container .featuer-items img{
+  width: 50px;
+}
+.featuers .container .featuer-items h4{
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+.featuers .container .featuer-items p{
+  font-size: 12px;
 }
